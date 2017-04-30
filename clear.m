@@ -1,0 +1,10 @@
+function y = clear(X)
+%I = rgb2gray(X);
+%I=X;
+I=X;
+[c,s] = decompose2(I, 3, 'db1');
+nc = wthcoef2('a', c, s);
+nnc = wthcoef2(['h', 'v', 'd'], nc, s, 1);
+I_n = recompose2(nnc, s, 'db1');
+y = mat2gray(I_n, [0 255]);
+%y = arrayfun(@(x) x*255, I_n);
