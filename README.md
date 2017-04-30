@@ -13,5 +13,5 @@ It uses to techniques to filter mammograms:
 * On a 128x128 patch, microcalcifiactions are 5x5 or larger.
 
 ## Sample run
-![](mdb148.jpg =500x "Original image")
-![](mdb148_final.jpg =500x "Image after microcalcification filtering")
+![](mdb148.jpg "Original image" =500x)
+![](mdb148_final.jpg "Image after microcalcification filtering" =500x)
